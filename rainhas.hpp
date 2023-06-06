@@ -6,11 +6,12 @@
 #include <fstream>
 #include <string>
 
-void convert(const std::vector<int>& board);
 
 bool esafe(const std::vector<int>& board, int row, int col);
 
 bool resolveRainhas(std::vector<int>& board, int row);
+
+void getAttackingQueens(const std::vector<int>& board);
 
 int checkSolution(std::vector<int>& board);
 
