@@ -4,8 +4,6 @@
 
 #include <vector>
 
-/*bool isSafe(std::vector<int>& board, int row, int col);
-bool resolveRainhas(std::vector<int>& board, int row);*/
 
 bool esafe(const std::vector<int>& board, int row, int col);
 
@@ -13,4 +11,4 @@ bool resolveRainhas(std::vector<int>& board, int row);
 
 int checkSolution(std::vector<int>& board);
 
-#endif // EIGHT_QUEENS_HPP 
+#endif 
