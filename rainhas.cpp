@@ -46,10 +46,10 @@ bool resolveRainhas(vector<int>& board, int row = 0) {
         return true;
 
     for (int col = 0; col < 8; col++) {
-        // Verifica se é seguro colocar uma dama na posição (row, col)
+
 
         if (esafe(board, row, col)) {
-            // Coloca uma dama na posição (row, col)
+         
 
             board[row] = col;
 
