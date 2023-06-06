@@ -48,6 +48,20 @@ TEST_CASE("Teste de validação do tabuleiro inválido: tres na mesma coluna") {
     REQUIRE(checkSolution(board) == 0);
 }
 
+TEST_CASE("Teste de validação do tabuleiro inválido: mais um erro de diagonal") {
+    std::vector<int> board = {
+        1, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 1, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 1,
+        0, 0, 0, 0, 0, 1, 0, 0,
+        0, 0, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 1, 0,
+        0, 1, 0, 0, 0, 0, 0, 0,
+        1, 0, 0, 0, 0, 0, 0, 0
+    };
+    getAttackingQueens(board);
+    REQUIRE(checkSolution(board) == 0);
+}
 
 
 TEST_CASE("Teste de solução inválida do tabuleiro ou rainhas") {
