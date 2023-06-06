@@ -27,7 +27,6 @@ bool esafe(vector<int>& board, int row, int col) {
             return false;
     }
 
-    // Verifica se há damas na mesma linha
     for (int j = 0; j < 8; j++) {
         if (j != col && board[row * 8+ j])
             return false;
