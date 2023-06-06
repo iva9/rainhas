@@ -69,14 +69,12 @@ int checkSolution(std::vector<int>& board) {
 
 
     int count = 0;
-   
 
     for (int i = 0; i < board.size(); i++) {
         if (board[i] == 1){
             count++;
         }
     }
- 
 
     if (count != 8) {
         return -1;
@@ -88,7 +86,7 @@ int checkSolution(std::vector<int>& board) {
 }
 
 void getAttackingQueens(const std::vector<int>& board) {
-    std::ofstream outputFile("teste_8_rainhas.txt",ios::app);
+    std::ofstream outputFile("teste_8_rainhas.txt", ios::app);
     if (!outputFile.is_open()) {
         std::cout << "Falha ao abrir o arquivo de saída." << std::endl;
         return;
