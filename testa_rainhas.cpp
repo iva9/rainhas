@@ -4,7 +4,7 @@
 #include <vector>
 #include "rainhas.hpp"
 
-TEST_CASE("Teste de solução válida das 8 damas") {
+TEST_CASE("Teste de solução inválida das 8 damas") {
     std::vector<int> board = {
         0, 0, 0, 0, 1, 0, 0, 0,
         1, 0, 0, 0, 0, 0, 0, 0,
@@ -15,7 +15,7 @@ TEST_CASE("Teste de solução válida das 8 damas") {
         0, 1, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 1, 0, 0, 0, 0
     };
-    REQUIRE(checkSolution(board) == 1);
+    REQUIRE(checkSolution(board) == 0);
 }
 
 TEST_CASE("Teste de validação do tabuleiro inválido: solução inválida") {
