@@ -53,7 +53,7 @@ bool resolveRainhas(vector<int>& board, int row = 0) {
 
             board[row] = col;
 
-            // Chama recursivamente para a próxima linha
+
 
             if (resolveRainhas(board, row + 1))
                 return true;
