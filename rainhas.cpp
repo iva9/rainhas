@@ -6,15 +6,12 @@
 using namespace std;
 
 bool esafe(vector<int>& board, int row, int col) {
-    // Verifica se a posição (row, col) é segura para colocar uma dama
 
-    // Verifica se há uma dama na mesma coluna
     for (int i = 0; i < row; i++) {
         if (board[i] == col)
             return false;
     }
 
-    // Verifica diagonais superiores
     for (int i = row, j = col; i >= 0 && j >= 0; i--, j--) {
         if (board[i] == j)
             return false;
