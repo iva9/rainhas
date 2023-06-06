@@ -101,7 +101,8 @@ void getAttackingQueens(const std::vector<int>& board) {
                     for (int j = 0; j < 8; j++) {
                         if (board[i * 8 + j] == 1 && (col == j ||
                          std::abs(row - i) == std::abs(col - j))) {
-                            outputFile << row + 1 << "," << col + 1 << " e " << i + 1 << "," << j + 1 << std::endl;
+                            outputFile << row + 1 << "," << col + 1 << " e "
+                             << i + 1 << "," << j + 1 << std::endl;
                         }
                     }
                 }
