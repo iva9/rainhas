@@ -76,4 +76,15 @@ TEST_CASE("Teste de solução inválida do tabuleiro ou rainhas, mas segunda ten
 
     REQUIRE(checkSolution(board) == -1);
 }
+TEST_CASE("Teste de solução inválida do tabuleiro ou rainhas, mas segunda terceira") {
+    std::vector<int> board = {
+        1, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 1, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 1,
+        0, 0, 0, 0, 0, 1, 0, 0,
+        0, 0,
+    };
+
+    REQUIRE(checkSolution(board) == -1);
+}
 
