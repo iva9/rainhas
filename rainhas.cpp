@@ -32,25 +32,16 @@ bool esafe(vector<int>& board, int row, int col) {
 }
 
 bool resolveRainhas(vector<int>& board, int row = 0) {
-
-
     if (row == 8)
         return true;
 
     for (int col = 0; col < 8; col++) {
 
-
         if (esafe(board, row, col)) {
-         
-
             board[row] = col;
-
-
 
             if (resolveRainhas(board, row + 1))
                 return true;
-
-       
             board[row] = -1;
         }
     }
