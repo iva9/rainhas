@@ -58,8 +58,7 @@ bool resolveRainhas(vector<int>& board, int row = 0) {
             if (resolveRainhas(board, row + 1))
                 return true;
 
-            // Se não encontrou solução, remove a dama da posição (row, col)
-
+       
             board[row] = -1;
         }
     }
