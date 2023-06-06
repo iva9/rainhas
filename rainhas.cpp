@@ -33,7 +33,6 @@ bool esafe(vector<int>& board, int row, int col) {
             return false;
     }
 
-    // A posição (row, col) é segura
     return true;
 }
 
