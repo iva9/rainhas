@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-bool isSafe(vector<int>& board, int row, int col) {
+bool esafe(vector<int>& board, int row, int col) {
     // Verifica se a posição (row, col) é segura para colocar uma dama
 
     // Verifica se há uma dama na mesma coluna
@@ -35,7 +35,7 @@ bool isSafe(vector<int>& board, int row, int col) {
     return true;
 }
 
-bool solveNQueens(vector<int>& board, int row = 0) {
+bool resolveRainhas(vector<int>& board, int row = 0) {
     // Verifica todas as possíveis configurações para as damas
 
     // Caso base: todas as linhas foram preenchidas
@@ -44,12 +44,12 @@ bool solveNQueens(vector<int>& board, int row = 0) {
 
     for (int col = 0; col < 8; col++) {
         // Verifica se é seguro colocar uma dama na posição (row, col)
-        if (isSafe(board, row, col)) {
+        if (esafe(board, row, col)) {
             // Coloca uma dama na posição (row, col)
             board[row] = col;
 
             // Chama recursivamente para a próxima linha
-            if (solveNQueens(board, row + 1))
+            if (resolveRainhas(board, row + 1))
                 return true;
 
             // Se não encontrou solução, remove a dama da posição (row, col)
@@ -83,5 +83,5 @@ int checkSolution(std::vector<int>& board) {
     }
     
     // Verifica se oque for correto antes de ? roda o caso 1 e  logo após 0
-    return solveNQueens(board)?1:0;
+    return resolveRainhas(board)?1:0;
 }

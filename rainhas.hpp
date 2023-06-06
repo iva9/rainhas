@@ -5,11 +5,11 @@
 #include <vector>
 
 /*bool isSafe(std::vector<int>& board, int row, int col);
-bool solveNQueens(std::vector<int>& board, int row);*/
+bool resolveRainhas(std::vector<int>& board, int row);*/
 
-bool isSafe(const std::vector<int>& board, int row, int col);
+bool esafe(const std::vector<int>& board, int row, int col);
 
-bool solveNQueens(std::vector<int>& board, int row);
+bool resolveRainhas(std::vector<int>& board, int row);
 
 int checkSolution(std::vector<int>& board);
 
