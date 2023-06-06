@@ -20,7 +20,6 @@ bool esafe(vector<int>& board, int row, int col) {
             return false;
     }
 
-    // Verifica diagonais inferiores
 
     for (int i = row, j = col; i >= 0 && j < 8; i--, j++) {
         if (board[i] == j)
