@@ -38,9 +38,7 @@ bool esafe(vector<int>& board, int row, int col) {
 }
 
 bool resolveRainhas(vector<int>& board, int row = 0) {
-    // Verifica todas as possíveis configurações para as damas
 
-    // Caso base: todas as linhas foram preenchidas
 
     if (row == 8)
         return true;
