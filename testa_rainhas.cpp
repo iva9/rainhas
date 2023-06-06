@@ -38,7 +38,7 @@ TEST_CASE("Teste de validação do tabuleiro inválido: tres na mesma coluna") {
         1, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
-        1, 0, 0, 0, 0, 1, 0, 0,
+        0, 0, 0, 0, 0, 1, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 1, 0,
         0, 1, 0, 0, 0, 0, 0, 0,
@@ -60,6 +60,21 @@ TEST_CASE("Teste de solução inválida do tabuleiro ou rainhas") {
         0, 0, 0, 0, 0, 0, 1, 0,
         0, 1, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 1, 1, 0
+    };
+
+    REQUIRE(checkSolution(board) == -1);
+}
+
+TEST_CASE("Teste de solução inválida do tabuleiro ou rainhas, mas segunda tentativas") {
+    std::vector<int> board = {
+        1, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 1, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 1,
+        0, 0, 0, 0, 0, 1, 0, 0,
+        0, 0, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 1, 0,
+        0, 1, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 1, 1, 0, 1
     };
 
     REQUIRE(checkSolution(board) == -1);
