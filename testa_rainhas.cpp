@@ -48,7 +48,7 @@ TEST_CASE("Teste de validação do tabuleiro inválido: tres na mesma coluna") {
     REQUIRE(checkSolution(board) == 0);
 }
 
-TEST_CASE("Teste de validação do tabuleiro inválido: mais um erro de diagonal") {
+TEST_CASE("Teste de validação do tabuleiro inválido: erro de diagonal") {
     std::vector<int> board = {
         1, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 1, 0, 0, 0,
@@ -79,18 +79,17 @@ TEST_CASE("Teste de solução inválida do tabuleiro ou rainhas") {
     REQUIRE(checkSolution(board) == -1);
 }
 
-TEST_CASE("Teste de solução inválida do tabuleiro ou rainhas, mas segunda tentativas") {
+TEST_CASE("Teste de solução inválida, mas segunda tentativas") {
     std::vector<int> board = {
         1, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
-    
     };
 
     REQUIRE(checkSolution(board) == -1);
 }
-TEST_CASE("Teste de solução inválida do tabuleiro ou rainhas, mas segunda terceira") {
+TEST_CASE("Teste de solução inválida, mas terceira terceira") {
     std::vector<int> board = {
         1, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 1, 0, 0, 0,
