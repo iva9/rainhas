@@ -64,36 +64,34 @@ bool resolveRainhas(vector<int>& board, int row = 0) {
         }
     }
 
-    // Não há solução possível para a configuração atual
+
 
     return false;
 }
 
 int checkSolution(std::vector<int>& board) {
-    // Verifica se o tabuleiro contém uma solução válida para o problema das 8 rainhas
 
-    // Verifica se o tabuleiro tem o tamanho correto
     if (board.size() != 64) {
-        return -1; // Entrada inválida
+        return -1;
         return -1; 
     }
 
 
     int count = 0;
-    // Verifica se os elementos do tabuleiro existem o numero correto de damas(rainhas)
+   
 
     for (int i = 0; i < board.size(); i++) {
         if (board[i] == 1){
             count++;
         }
     }
-    // Verifica, se for diferente de 8 rainhas, caso inválido 
+ 
 
     if (count != 8) {
         return -1;
     }
 
-    // Verifica se oque for correto antes de ? roda o caso 1 e  logo após 0
+   
 
     return resolveRainhas(board)?1:0;
 }
