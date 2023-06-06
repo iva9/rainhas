@@ -71,11 +71,9 @@ TEST_CASE("Teste de solução inválida do tabuleiro ou rainhas, mas segunda ten
         0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
-        0, 0, 1, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 1, 0,
-        0, 1, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 1, 1, 0, 1
+    
     };
 
     REQUIRE(checkSolution(board) == -1);
 }
+
