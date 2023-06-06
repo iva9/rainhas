@@ -82,14 +82,14 @@ int checkSolution(std::vector<int>& board) {
     int count = 0;
     // Verifica se os elementos do tabuleiro existem o numero correto de damas(rainhas)
 
-    for(int i=0; i < board.size(); i++){
+    for (int i = 0; i < board.size(); i++) {
         if (board[i] == 1){
             count++;
         }
     }
     // Verifica, se for diferente de 8 rainhas, caso inválido 
 
-    if(count != 8){
+    if (count != 8) {
         return -1;
     }
 
