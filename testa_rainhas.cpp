@@ -1,8 +1,9 @@
 // Copyright[2023] <Ivanov M. Santos>
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
-#include <vector>
 #include "rainhas.hpp"
+#include <vector>
+
 
 TEST_CASE("Teste de solução inválida das 8 damas") {
     std::vector<int> board = {

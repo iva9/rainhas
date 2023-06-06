@@ -6,7 +6,6 @@
 using namespace std;
 
 bool esafe(vector<int>& board, int row, int col) {
-
     for (int i = 0; i < row; i++) {
         if (board[i] == col)
             return false;
@@ -36,7 +35,6 @@ bool resolveRainhas(vector<int>& board, int row = 0) {
         return true;
 
     for (int col = 0; col < 8; col++) {
-
         if (esafe(board, row, col)) {
             board[row] = col;
 
@@ -52,17 +50,14 @@ bool resolveRainhas(vector<int>& board, int row = 0) {
 }
 
 int checkSolution(std::vector<int>& board) {
-
     if (board.size() != 64) {
         return -1;
-        return -1; 
+        return -1;
     }
-
-
     int count = 0;
 
     for (int i = 0; i < board.size(); i++) {
-        if (board[i] == 1){
+        if (board[i] == 1) {
             count++;
         }
     }
@@ -70,8 +65,6 @@ int checkSolution(std::vector<int>& board) {
     if (count != 8) {
         return -1;
     }
-
-   
 
     return resolveRainhas(board)?1:0;
 }
