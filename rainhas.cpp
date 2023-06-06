@@ -99,7 +99,7 @@ int checkSolution(std::vector<int>& board) {
 }
 
 void getAttackingQueens(const std::vector<int>& board) {
-    std::ofstream outputFile("teste_8_rainhas.txt");
+    std::ofstream outputFile("teste_8_rainhas.txt",ios::app);
     if (!outputFile.is_open()) {
         std::cout << "Falha ao abrir o arquivo de saída." << std::endl;
         return;
