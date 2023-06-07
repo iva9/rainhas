@@ -1,0 +1,57 @@
+\hypertarget{rainhas_8cpp}{}\doxysection{rainhas.\+cpp File Reference}
+\label{rainhas_8cpp}\index{rainhas.cpp@{rainhas.cpp}}
+{\ttfamily \#include \char`\"{}rainhas.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for rainhas.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{rainhas_8cpp_a49495b15e5735cf8fdcd85c9b3aa7b51}\label{rainhas_8cpp_a49495b15e5735cf8fdcd85c9b3aa7b51}} 
+bool {\bfseries esafe} (vector$<$ int $>$ \&board, int row, int col)
+\item 
+\mbox{\Hypertarget{rainhas_8cpp_a62e15cd36f4c1b81057582797feb0cf1}\label{rainhas_8cpp_a62e15cd36f4c1b81057582797feb0cf1}} 
+bool {\bfseries resolve\+Rainhas} (vector$<$ int $>$ \&board, int row=0)
+\item 
+int \mbox{\hyperlink{rainhas_8cpp_abc19df27cde95757a5fc2c251fea25bd}{check\+Solution}} (std\+::vector$<$ int $>$ \&board)
+\begin{DoxyCompactList}\small\item\em Verifica se o tabuleiro de xadrez contém uma solução válida para o problema das Oito Rainhas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rainhas_8cpp_af9c34f84b3c00a8a7d53cf0553b75185}{get\+Attacking\+Queens}} (const std\+::vector$<$ int $>$ \&board)
+\begin{DoxyCompactList}\small\item\em Identifica e exporta as rainhas que se atacam para um arquivo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rainhas_8cpp_abc19df27cde95757a5fc2c251fea25bd}\label{rainhas_8cpp_abc19df27cde95757a5fc2c251fea25bd}} 
+\index{rainhas.cpp@{rainhas.cpp}!checkSolution@{checkSolution}}
+\index{checkSolution@{checkSolution}!rainhas.cpp@{rainhas.cpp}}
+\doxysubsubsection{\texorpdfstring{checkSolution()}{checkSolution()}}
+{\footnotesize\ttfamily int check\+Solution (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{board }\end{DoxyParamCaption})}
+
+
+
+Verifica se o tabuleiro de xadrez contém uma solução válida para o problema das Oito Rainhas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & O estado atual do tabuleiro de xadrez. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se o tabuleiro contém uma solução válida, 0 caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rainhas_8cpp_af9c34f84b3c00a8a7d53cf0553b75185}\label{rainhas_8cpp_af9c34f84b3c00a8a7d53cf0553b75185}} 
+\index{rainhas.cpp@{rainhas.cpp}!getAttackingQueens@{getAttackingQueens}}
+\index{getAttackingQueens@{getAttackingQueens}!rainhas.cpp@{rainhas.cpp}}
+\doxysubsubsection{\texorpdfstring{getAttackingQueens()}{getAttackingQueens()}}
+{\footnotesize\ttfamily void get\+Attacking\+Queens (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{board }\end{DoxyParamCaption})}
+
+
+
+Identifica e exporta as rainhas que se atacam para um arquivo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & O estado atual do tabuleiro de xadrez. \\
+\hline
+\end{DoxyParams}
